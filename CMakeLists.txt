@@ -18,7 +18,7 @@ include_directories(
 
 file(GLOB_RECURSE SOURCES "fw_lib/src/*.*" "user/*.*" "hardware/*.*")
 
-add_executable(sdcc user/main.c ${SOURCES})
+add_executable(sdcc ${SOURCES})
 
 add_custom_command(TARGET sdcc
         POST_BUILD
